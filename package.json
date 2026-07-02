@@ -1,0 +1,32 @@
+{
+  "name": "chrema-contracts",
+  "version": "3.0.0",
+  "description": "Official smart contracts for CHREMACOIN (CRMC) — gold-linked RWA token on Polygon",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "deploy": "hardhat run scripts/deploy.js --network polygon",
+    "verify": "hardhat run scripts/verify.js --network polygon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.28.6",
+    "solc": "^0.8.20",
+    "solhint": "^6.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChremaCoin/chrema-contracts.git"
+  }
+}
